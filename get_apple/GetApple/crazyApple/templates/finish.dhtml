@@ -1,0 +1,23 @@
+
+<html>
+<style>
+h1{
+  font-family: 'Microsoft Yahei';
+  font-size: 50px;
+  color: #000;
+}
+.words3{
+  /* red */
+  color: #f00;
+  font-size: 20px;
+}
+</style>
+<h1>
+  我刚刚合成了一部iphone <b class = 'words3' style = 'font-size: 50px'>{{apple_number}}!!!</b>
+</h1>
+<h1>
+  超过了百分之<b class = 'words3' style = 'font-size: 70px'>{{percent}}</b>的小伙伴，哈哈哈！
+</h1>
+
+</html>
+

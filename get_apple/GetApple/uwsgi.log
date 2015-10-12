@@ -1,0 +1,804 @@
+*** Starting uWSGI 2.0.8 (64bit) on [Fri Dec 26 11:08:31 2014] ***
+compiled with version: 4.2.1 Compatible Apple LLVM 6.0 (clang-600.0.56) on 26 December 2014 08:30:25
+os: Darwin-14.0.0 Darwin Kernel Version 14.0.0: Fri Sep 19 00:26:44 PDT 2014; root:xnu-2782.1.97~2/RELEASE_X86_64
+nodename: kouminquandeMacBook-Pro.local
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /Users/kouminquan/Workspaces/get_apple/GetApple
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /Users/kouminquan/Workspaces/get_apple/GetApple
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 709
+your memory page size is 4096 bytes
+detected max file descriptor number: 2560
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :8077 fd 3
+Python version: 2.7.6 (default, Sep  9 2014, 15:04:36)  [GCC 4.2.1 Compatible Apple LLVM 6.0 (clang-600.0.39)]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x7f9982d01110
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 291040 bytes (284 KB) for 4 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x7f9982d01110 pid: 83316 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (pid: 83316, cores: 1)
+spawned uWSGI worker 2 (pid: 83317, cores: 1)
+spawned uWSGI worker 3 (pid: 83318, cores: 1)
+spawned uWSGI worker 4 (pid: 83319, cores: 1)
+*** Starting uWSGI 2.0.8 (64bit) on [Fri Dec 26 11:30:52 2014] ***
+compiled with version: 4.2.1 Compatible Apple LLVM 6.0 (clang-600.0.56) on 26 December 2014 08:30:25
+os: Darwin-14.0.0 Darwin Kernel Version 14.0.0: Fri Sep 19 00:26:44 PDT 2014; root:xnu-2782.1.97~2/RELEASE_X86_64
+nodename: kouminquandeMacBook-Pro.local
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /Users/kouminquan/Workspaces/get_apple/GetApple
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /Users/kouminquan/Workspaces/get_apple/GetApple
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 709
+your memory page size is 4096 bytes
+detected max file descriptor number: 2560
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (:8077).
+bind(): Address already in use [core/socket.c line 761]
+[pid: 83319|app: 0|req: 1/1] 127.0.0.1 () {42 vars in 814 bytes} [Fri Dec 26 11:31:42 2014] GET / => generated 0 bytes in 90 msecs (HTTP/1.1 301) 4 headers in 166 bytes (1 switches on core 0)
+[pid: 83318|app: 0|req: 1/2] 127.0.0.1 () {42 vars in 844 bytes} [Fri Dec 26 11:31:43 2014] GET /crazyApple/home => generated 0 bytes in 33 msecs (HTTP/1.1 301) 3 headers in 153 bytes (1 switches on core 0)
+new.....
+used time = 0.0117809772491
+[0, 2, 1, 3]
+[2, 3, 0, 1]
+[3, 0, 2, 1]
+[2, 1, 3, 0]
+100  == progress_new_value
+3
+[pid: 83319|app: 0|req: 2/3] 127.0.0.1 () {42 vars in 846 bytes} [Fri Dec 26 11:31:43 2014] GET /crazyApple/home/ => generated 5928 bytes in 67 msecs (HTTP/1.1 200) 5 headers in 355 bytes (2 switches on core 0)
+[pid: 83319|app: 0|req: 3/4] 192.168.1.109 () {42 vars in 822 bytes} [Fri Dec 26 11:31:52 2014] GET / => generated 0 bytes in 6 msecs (HTTP/1.1 301) 4 headers in 170 bytes (1 switches on core 0)
+[pid: 83319|app: 0|req: 4/5] 192.168.1.109 () {42 vars in 852 bytes} [Fri Dec 26 11:31:52 2014] GET /crazyApple/home => generated 0 bytes in 0 msecs (HTTP/1.1 301) 3 headers in 157 bytes (1 switches on core 0)
+new.....
+used time = 0.0330109596252
+[2, 1, 0, 3]
+[0, 2, 3, 1]
+[2, 1, 0, 3]
+[0, 3, 1, 2]
+100  == progress_new_value
+6
+[pid: 83319|app: 0|req: 5/6] 192.168.1.109 () {42 vars in 854 bytes} [Fri Dec 26 11:31:52 2014] GET /crazyApple/home/ => generated 5928 bytes in 50 msecs (HTTP/1.1 200) 5 headers in 355 bytes (1 switches on core 0)
+[pid: 83318|app: 0|req: 2/7] 192.168.1.109 () {42 vars in 773 bytes} [Fri Dec 26 11:31:52 2014] GET /favicon.ico => generated 85 bytes in 136 msecs (HTTP/1.1 404) 3 headers in 94 bytes (1 switches on core 0)
+new.....
+used time = 0.00098180770874
+[0, 2, 1, 3]
+[2, 1, 3, 0]
+[0, 1, 3, 2]
+[2, 3, 1, 0]
+100  == progress_new_value
+5
+[pid: 83319|app: 0|req: 6/8] 192.168.1.109 () {44 vars in 885 bytes} [Fri Dec 26 11:33:26 2014] GET /crazyApple/home/ => generated 5940 bytes in 27 msecs (HTTP/1.1 200) 5 headers in 355 bytes (1 switches on core 0)
+new.....
+used time = 0.0111689567566
+[3, 0, 2, 1]
+[0, 3, 1, 2]
+[1, 3, 2, 0]
+[0, 2, 1, 3]
+100  == progress_new_value
+6
+[pid: 83319|app: 0|req: 7/9] 192.168.1.109 () {44 vars in 885 bytes} [Fri Dec 26 11:37:30 2014] GET /crazyApple/home/ => generated 5941 bytes in 33 msecs (HTTP/1.1 200) 5 headers in 355 bytes (1 switches on core 0)
+new.....
+used time = 0.0139620304108
+[0, 1, 2, 3]
+[2, 3, 0, 1]
+[3, 1, 2, 0]
+[2, 0, 3, 1]
+100  == progress_new_value
+6
+[pid: 83319|app: 0|req: 8/10] 192.168.1.109 () {44 vars in 885 bytes} [Fri Dec 26 11:38:11 2014] GET /crazyApple/home/ => generated 5942 bytes in 32 msecs (HTTP/1.1 200) 5 headers in 355 bytes (2 switches on core 0)
+[pid: 83319|app: 0|req: 9/11] 192.168.1.109 () {44 vars in 916 bytes} [Fri Dec 26 11:38:21 2014] GET /crazyApple/finish/ => generated 377 bytes in 19 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+get a post !!!
+chose id == 1
+progress value  82
+used time = 0.000402927398682
+[1, 0, 3, 2]
+[0, 2, 1, 3]
+[0, 3, 1, 2]
+[2, 1, 0, 3]
+84  == progress_new_value
+4
+[pid: 83319|app: 0|req: 10/12] 192.168.1.109 () {52 vars in 1166 bytes} [Fri Dec 26 11:38:25 2014] POST /crazyApple/home/ => generated 5939 bytes in 18 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+get a post !!!
+chose id == 2
+progress value  68
+used time = 0.00356984138489
+[3, 0, 1, 2]
+[2, 3, 0, 1]
+[3, 2, 0, 1]
+[1, 3, 2, 0]
+70  == progress_new_value
+6
+[pid: 83319|app: 0|req: 11/13] 192.168.1.109 () {52 vars in 1166 bytes} [Fri Dec 26 11:38:27 2014] POST /crazyApple/home/ => generated 5927 bytes in 18 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+get a post !!!
+chose id == 3
+progress value  58
+used time = 0.00928902626038
+[2, 3, 0, 1]
+[3, 0, 1, 2]
+[2, 0, 3, 1]
+[1, 3, 2, 0]
+60  == progress_new_value
+4
+[pid: 83319|app: 0|req: 12/14] 192.168.1.109 () {52 vars in 1166 bytes} [Fri Dec 26 11:38:28 2014] POST /crazyApple/home/ => generated 5927 bytes in 26 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+get a post !!!
+chose id == 0
+progress value  36
+used time = 0.00387406349182
+[2, 1, 3, 0]
+[0, 2, 1, 3]
+[1, 0, 3, 2]
+[3, 2, 1, 0]
+46  == progress_new_value
+5
+[pid: 83319|app: 0|req: 13/15] 192.168.1.109 () {52 vars in 1166 bytes} [Fri Dec 26 11:38:30 2014] POST /crazyApple/home/ => generated 5941 bytes in 23 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+[pid: 83319|app: 0|req: 14/16] 192.168.1.109 () {44 vars in 916 bytes} [Fri Dec 26 11:38:35 2014] GET /crazyApple/finish/ => generated 378 bytes in 7 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 83317|app: 0|req: 1/17] 192.168.1.112 () {40 vars in 585 bytes} [Fri Dec 26 11:40:03 2014] GET / => generated 0 bytes in 61 msecs (HTTP/1.1 301) 4 headers in 170 bytes (2 switches on core 0)
+[pid: 83317|app: 0|req: 2/18] 192.168.1.112 () {40 vars in 615 bytes} [Fri Dec 26 11:40:03 2014] GET /crazyApple/home => generated 0 bytes in 1 msecs (HTTP/1.1 301) 3 headers in 157 bytes (2 switches on core 0)
+used time = 0.0130989551544
+[3, 0, 1, 2]
+[1, 3, 2, 0]
+[1, 0, 2, 3]
+[3, 2, 0, 1]
+100  == progress_new_value
+4
+[pid: 83318|app: 0|req: 3/19] 192.168.1.112 () {40 vars in 617 bytes} [Fri Dec 26 11:40:03 2014] GET /crazyApple/home/ => generated 5941 bytes in 56 msecs (HTTP/1.1 200) 5 headers in 355 bytes (2 switches on core 0)
+[pid: 83317|app: 0|req: 3/20] 192.168.1.112 () {44 vars in 780 bytes} [Fri Dec 26 11:40:15 2014] GET /crazyApple/finish/ => generated 377 bytes in 32 msecs (HTTP/1.1 200) 3 headers in 102 bytes (2 switches on core 0)
+[pid: 83318|app: 0|req: 4/21] 192.168.1.112 () {44 vars in 780 bytes} [Fri Dec 26 11:40:16 2014] GET /crazyApple/finish/ => generated 377 bytes in 8 msecs (HTTP/1.1 200) 3 headers in 102 bytes (2 switches on core 0)
+new.....
+used time = 0.00708699226379
+[2, 1, 3, 0]
+[1, 0, 2, 3]
+[1, 3, 0, 2]
+[0, 2, 3, 1]
+100  == progress_new_value
+6
+[pid: 83318|app: 0|req: 5/22] 192.168.1.112 () {42 vars in 718 bytes} [Fri Dec 26 11:40:19 2014] GET /crazyApple/home/ => generated 5941 bytes in 32 msecs (HTTP/1.1 200) 5 headers in 355 bytes (2 switches on core 0)
+get a post !!!
+chose id == 3
+progress value  40
+used time = 0.000810146331787
+[2, 1, 3, 0]
+[3, 2, 0, 1]
+[1, 0, 2, 3]
+[0, 2, 3, 1]
+42  == progress_new_value
+5
+[pid: 83316|app: 0|req: 1/23] 192.168.1.112 () {50 vars in 1005 bytes} [Fri Dec 26 11:40:25 2014] POST /crazyApple/home/ => generated 5927 bytes in 53 msecs (HTTP/1.1 200) 4 headers in 224 bytes (2 switches on core 0)
+[pid: 83318|app: 0|req: 6/24] 192.168.1.112 () {44 vars in 780 bytes} [Fri Dec 26 11:40:31 2014] GET /crazyApple/finish/ => generated 377 bytes in 8 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 83319|app: 0|req: 15/25] 192.168.1.112 () {44 vars in 780 bytes} [Fri Dec 26 11:40:31 2014] GET /crazyApple/finish/ => generated 378 bytes in 7 msecs (HTTP/1.1 200) 3 headers in 102 bytes (2 switches on core 0)
+[pid: 83317|app: 0|req: 4/26] 192.168.1.112 () {44 vars in 780 bytes} [Fri Dec 26 11:40:31 2014] GET /crazyApple/finish/ => generated 377 bytes in 9 msecs (HTTP/1.1 200) 3 headers in 102 bytes (2 switches on core 0)
+[pid: 83317|app: 0|req: 5/27] 192.168.1.112 () {44 vars in 780 bytes} [Fri Dec 26 11:40:32 2014] GET /crazyApple/finish/ => generated 377 bytes in 8 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 83319|app: 0|req: 16/28] 192.168.1.112 () {44 vars in 780 bytes} [Fri Dec 26 11:40:32 2014] GET /crazyApple/finish/ => generated 378 bytes in 8 msecs (HTTP/1.1 200) 3 headers in 102 bytes (2 switches on core 0)
+[pid: 83317|app: 0|req: 6/29] 192.168.1.112 () {44 vars in 780 bytes} [Fri Dec 26 11:40:33 2014] GET /crazyApple/finish/ => generated 377 bytes in 7 msecs (HTTP/1.1 200) 3 headers in 102 bytes (2 switches on core 0)
+[pid: 83317|app: 0|req: 7/30] 192.168.1.112 () {44 vars in 780 bytes} [Fri Dec 26 11:40:33 2014] GET /crazyApple/finish/ => generated 377 bytes in 7 msecs (HTTP/1.1 200) 3 headers in 102 bytes (2 switches on core 0)
+new.....
+used time = 0.00322604179382
+[0, 2, 3, 1]
+[1, 0, 2, 3]
+[3, 0, 2, 1]
+[0, 3, 1, 2]
+100  == progress_new_value
+3
+[pid: 83317|app: 0|req: 8/31] 192.168.1.112 () {42 vars in 718 bytes} [Fri Dec 26 11:40:40 2014] GET /crazyApple/home/ => generated 5941 bytes in 29 msecs (HTTP/1.1 200) 5 headers in 355 bytes (2 switches on core 0)
+used time = 0.00756812095642
+[3, 0, 2, 1]
+[0, 3, 1, 2]
+[1, 0, 2, 3]
+[3, 2, 1, 0]
+46  == progress_new_value
+6
+[pid: 83319|app: 0|req: 17/32] 192.168.1.112 () {42 vars in 718 bytes} [Fri Dec 26 11:40:44 2014] GET /crazyApple/home/ => generated 5940 bytes in 23 msecs (HTTP/1.1 200) 5 headers in 355 bytes (1 switches on core 0)
+[pid: 83319|app: 0|req: 18/33] 192.168.1.109 () {44 vars in 916 bytes} [Fri Dec 26 11:40:58 2014] GET /crazyApple/finish/ => generated 378 bytes in 10 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 83319|app: 0|req: 19/34] 192.168.1.112 () {38 vars in 615 bytes} [Fri Dec 26 11:45:18 2014] GET / => generated 0 bytes in 1 msecs (HTTP/1.1 301) 4 headers in 170 bytes (1 switches on core 0)
+[pid: 83317|app: 0|req: 9/35] 192.168.1.112 () {38 vars in 645 bytes} [Fri Dec 26 11:45:18 2014] GET /crazyApple/home => generated 0 bytes in 2 msecs (HTTP/1.1 301) 3 headers in 157 bytes (1 switches on core 0)
+used time = 0.00177383422852
+[3, 1, 0, 2]
+[2, 0, 3, 1]
+[3, 0, 1, 2]
+[2, 1, 0, 3]
+100  == progress_new_value
+4
+[pid: 83317|app: 0|req: 10/36] 192.168.1.112 () {38 vars in 647 bytes} [Fri Dec 26 11:45:18 2014] GET /crazyApple/home/ => generated 5928 bytes in 25 msecs (HTTP/1.1 200) 5 headers in 355 bytes (2 switches on core 0)
+get a post !!!
+chose id == 0
+progress value  56
+used time = 0.0113589763641
+[3, 1, 2, 0]
+[0, 2, 3, 1]
+[3, 2, 1, 0]
+[1, 0, 2, 3]
+66  == progress_new_value
+6
+[pid: 83317|app: 0|req: 11/37] 192.168.1.112 () {48 vars in 1016 bytes} [Fri Dec 26 11:45:23 2014] POST /crazyApple/home/ => generated 5940 bytes in 26 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+get a post !!!
+chose id == 3
+progress value  22
+used time = 0.00974178314209
+[2, 1, 0, 3]
+[0, 3, 2, 1]
+[2, 1, 0, 3]
+[0, 3, 2, 1]
+32  == progress_new_value
+4
+[pid: 83318|app: 0|req: 7/38] 192.168.1.112 () {48 vars in 1014 bytes} [Fri Dec 26 11:45:28 2014] POST /crazyApple/home/ => generated 5927 bytes in 24 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+[pid: 83319|app: 0|req: 20/39] 192.168.1.112 () {42 vars in 791 bytes} [Fri Dec 26 11:45:32 2014] GET /crazyApple/finish/ => generated 378 bytes in 8 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+new.....
+used time = 0.0175890922546
+[3, 2, 0, 1]
+[1, 0, 3, 2]
+[0, 2, 3, 1]
+[1, 3, 2, 0]
+100  == progress_new_value
+5
+[pid: 83317|app: 0|req: 12/40] 192.168.1.112 () {40 vars in 748 bytes} [Fri Dec 26 11:45:40 2014] GET /crazyApple/home/ => generated 5928 bytes in 32 msecs (HTTP/1.1 200) 5 headers in 355 bytes (2 switches on core 0)
+get a post !!!
+chose id == 1
+progress value  26
+used time = 0.000997066497803
+[3, 1, 2, 0]
+[2, 3, 0, 1]
+[2, 1, 3, 0]
+[0, 3, 1, 2]
+28  == progress_new_value
+4
+[pid: 83318|app: 0|req: 8/41] 192.168.1.112 () {48 vars in 1014 bytes} [Fri Dec 26 11:45:48 2014] POST /crazyApple/home/ => generated 5940 bytes in 14 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+[pid: 83318|app: 0|req: 9/42] 192.168.1.112 () {42 vars in 791 bytes} [Fri Dec 26 11:45:51 2014] GET /crazyApple/finish/ => generated 377 bytes in 9 msecs (HTTP/1.1 200) 3 headers in 102 bytes (2 switches on core 0)
+new.....
+used time = 0.037250995636
+[0, 2, 3, 1]
+[3, 1, 0, 2]
+[0, 2, 1, 3]
+[3, 1, 0, 2]
+100  == progress_new_value
+3
+[pid: 83319|app: 0|req: 21/43] 192.168.1.112 () {40 vars in 748 bytes} [Fri Dec 26 11:46:05 2014] GET /crazyApple/home/ => generated 5928 bytes in 51 msecs (HTTP/1.1 200) 5 headers in 355 bytes (2 switches on core 0)
+used time = 0.00149297714233
+[0, 2, 1, 3]
+[2, 1, 3, 0]
+[0, 3, 1, 2]
+[3, 1, 2, 0]
+100  == progress_new_value
+4
+[pid: 83317|app: 0|req: 13/44] 192.168.1.112 () {40 vars in 748 bytes} [Fri Dec 26 11:46:08 2014] GET /crazyApple/home/ => generated 5940 bytes in 19 msecs (HTTP/1.1 200) 5 headers in 355 bytes (1 switches on core 0)
+used time = 0.0155990123749
+[2, 1, 3, 0]
+[0, 2, 1, 3]
+[2, 0, 3, 1]
+[1, 3, 2, 0]
+28  == progress_new_value
+4
+[pid: 83318|app: 0|req: 10/45] 192.168.1.112 () {40 vars in 748 bytes} [Fri Dec 26 11:46:10 2014] GET /crazyApple/home/ => generated 5939 bytes in 32 msecs (HTTP/1.1 200) 5 headers in 355 bytes (2 switches on core 0)
+[pid: 83319|app: 0|req: 22/46] 192.168.1.112 () {38 vars in 615 bytes} [Fri Dec 26 11:46:18 2014] GET / => generated 0 bytes in 2 msecs (HTTP/1.1 301) 4 headers in 170 bytes (1 switches on core 0)
+[pid: 83318|app: 0|req: 11/47] 192.168.1.112 () {38 vars in 645 bytes} [Fri Dec 26 11:46:20 2014] GET /crazyApple/home => generated 0 bytes in 1 msecs (HTTP/1.1 301) 3 headers in 157 bytes (2 switches on core 0)
+used time = 0.0150661468506
+[2, 0, 3, 1]
+[0, 2, 1, 3]
+[3, 1, 2, 0]
+[2, 0, 3, 1]
+100  == progress_new_value
+5
+[pid: 83317|app: 0|req: 14/48] 192.168.1.112 () {38 vars in 647 bytes} [Fri Dec 26 11:46:20 2014] GET /crazyApple/home/ => generated 5928 bytes in 28 msecs (HTTP/1.1 200) 5 headers in 355 bytes (2 switches on core 0)
+get a post !!!
+chose id == 0
+progress value  76
+used time = 0.00966787338257
+[0, 1, 2, 3]
+[1, 2, 3, 0]
+[0, 2, 3, 1]
+[2, 0, 1, 3]
+78  == progress_new_value
+6
+[pid: 83318|app: 0|req: 12/49] 192.168.1.112 () {48 vars in 1016 bytes} [Fri Dec 26 11:46:27 2014] POST /crazyApple/home/ => generated 5927 bytes in 22 msecs (HTTP/1.1 200) 4 headers in 224 bytes (2 switches on core 0)
+get a post !!!
+chose id == 1
+progress value  28
+used time = 0.0149600505829
+[2, 0, 3, 1]
+[0, 3, 1, 2]
+[3, 0, 2, 1]
+[0, 3, 1, 2]
+30  == progress_new_value
+6
+[pid: 83319|app: 0|req: 23/50] 192.168.1.112 () {48 vars in 1016 bytes} [Fri Dec 26 11:46:34 2014] POST /crazyApple/home/ => generated 5927 bytes in 25 msecs (HTTP/1.1 200) 4 headers in 224 bytes (2 switches on core 0)
+new.....
+used time = 0.0122330188751
+[1, 3, 0, 2]
+[3, 2, 1, 0]
+[2, 3, 1, 0]
+[3, 1, 0, 2]
+100  == progress_new_value
+3
+[pid: 83319|app: 0|req: 24/51] 192.168.1.112 () {40 vars in 748 bytes} [Fri Dec 26 11:46:44 2014] GET /crazyApple/home/ => generated 5941 bytes in 30 msecs (HTTP/1.1 200) 5 headers in 355 bytes (2 switches on core 0)
+[pid: 83317|app: 0|req: 15/52] 192.168.1.112 () {42 vars in 791 bytes} [Fri Dec 26 11:46:44 2014] GET /crazyApple/finish/ => generated 378 bytes in 8 msecs (HTTP/1.1 200) 3 headers in 102 bytes (2 switches on core 0)
+[pid: 83319|app: 0|req: 25/53] 192.168.1.112 () {42 vars in 791 bytes} [Fri Dec 26 11:46:44 2014] GET /crazyApple/finish/ => generated 377 bytes in 7 msecs (HTTP/1.1 200) 3 headers in 102 bytes (2 switches on core 0)
+used time = 0.00211405754089
+[2, 1, 3, 0]
+[1, 0, 2, 3]
+[3, 2, 1, 0]
+[0, 3, 2, 1]
+78  == progress_new_value
+4
+[pid: 83318|app: 0|req: 13/54] 192.168.1.112 () {40 vars in 748 bytes} [Fri Dec 26 11:46:46 2014] GET /crazyApple/home/ => generated 5927 bytes in 17 msecs (HTTP/1.1 200) 5 headers in 355 bytes (2 switches on core 0)
+get a post !!!
+chose id == 1
+progress value  44
+used time = 0.0425310134888
+[0, 3, 2, 1]
+[1, 0, 3, 2]
+[3, 0, 1, 2]
+[2, 1, 0, 3]
+46  == progress_new_value
+6
+[pid: 83319|app: 0|req: 26/55] 192.168.1.112 () {48 vars in 1014 bytes} [Fri Dec 26 11:46:50 2014] POST /crazyApple/home/ => generated 5927 bytes in 54 msecs (HTTP/1.1 200) 4 headers in 224 bytes (2 switches on core 0)
+get a post !!!
+chose id == 0
+progress value  22
+used time = 0.00811409950256
+[0, 1, 3, 2]
+[1, 2, 0, 3]
+[0, 2, 1, 3]
+[3, 1, 0, 2]
+32  == progress_new_value
+5
+[pid: 83319|app: 0|req: 27/56] 192.168.1.112 () {48 vars in 1014 bytes} [Fri Dec 26 11:46:53 2014] POST /crazyApple/home/ => generated 5927 bytes in 19 msecs (HTTP/1.1 200) 4 headers in 224 bytes (2 switches on core 0)
+get a post !!!
+chose id == 1
+progress value  12
+used time = 0.00323700904846
+[0, 2, 1, 3]
+[3, 0, 2, 1]
+[2, 1, 3, 0]
+[3, 0, 1, 2]
+14  == progress_new_value
+4
+[pid: 83317|app: 0|req: 16/57] 192.168.1.112 () {48 vars in 1014 bytes} [Fri Dec 26 11:46:56 2014] POST /crazyApple/home/ => generated 5940 bytes in 16 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+[pid: 83319|app: 0|req: 28/58] 192.168.1.112 () {42 vars in 791 bytes} [Fri Dec 26 11:46:58 2014] GET /crazyApple/finish/ => generated 378 bytes in 8 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 83317|app: 0|req: 17/59] 192.168.1.112 () {38 vars in 651 bytes} [Fri Dec 26 11:47:00 2014] GET /crazyApple/finish/ => generated 377 bytes in 7 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+used time = 0.027978181839
+[3, 2, 1, 0]
+[0, 1, 3, 2]
+[0, 1, 2, 3]
+[1, 0, 3, 2]
+32  == progress_new_value
+6
+[pid: 83319|app: 0|req: 29/60] 192.168.1.112 () {38 vars in 647 bytes} [Fri Dec 26 11:47:02 2014] GET /crazyApple/home/ => generated 5927 bytes in 44 msecs (HTTP/1.1 200) 5 headers in 355 bytes (2 switches on core 0)
+used time = 0.0180959701538
+[0, 3, 2, 1]
+[1, 0, 3, 2]
+[2, 1, 3, 0]
+[3, 0, 1, 2]
+78  == progress_new_value
+4
+[pid: 83318|app: 0|req: 14/61] 192.168.1.112 () {38 vars in 647 bytes} [Fri Dec 26 11:47:03 2014] GET /crazyApple/home/ => generated 5927 bytes in 33 msecs (HTTP/1.1 200) 5 headers in 355 bytes (1 switches on core 0)
+used time = 0.0108530521393
+[2, 1, 3, 0]
+[0, 3, 2, 1]
+[3, 2, 1, 0]
+[2, 3, 0, 1]
+32  == progress_new_value
+5
+[pid: 83319|app: 0|req: 30/62] 192.168.1.112 () {38 vars in 647 bytes} [Fri Dec 26 11:47:06 2014] GET /crazyApple/home/ => generated 5927 bytes in 30 msecs (HTTP/1.1 200) 5 headers in 355 bytes (2 switches on core 0)
+used time = 0.00013279914856
+[2, 3, 0, 1]
+[3, 0, 1, 2]
+[2, 0, 3, 1]
+[0, 3, 1, 2]
+32  == progress_new_value
+3
+[pid: 83319|app: 0|req: 31/63] 192.168.1.112 () {38 vars in 647 bytes} [Fri Dec 26 11:47:07 2014] GET /crazyApple/home/ => generated 5939 bytes in 16 msecs (HTTP/1.1 200) 5 headers in 355 bytes (1 switches on core 0)
+used time = 0.00741600990295
+[3, 1, 2, 0]
+[1, 2, 0, 3]
+[3, 2, 0, 1]
+[0, 3, 1, 2]
+14  == progress_new_value
+3
+[pid: 83317|app: 0|req: 18/64] 192.168.1.112 () {38 vars in 647 bytes} [Fri Dec 26 11:47:09 2014] GET /crazyApple/home/ => generated 5927 bytes in 22 msecs (HTTP/1.1 200) 5 headers in 355 bytes (1 switches on core 0)
+[pid: 83319|app: 0|req: 32/65] 192.168.1.112 () {38 vars in 615 bytes} [Fri Dec 26 11:47:20 2014] GET / => generated 0 bytes in 1 msecs (HTTP/1.1 301) 4 headers in 170 bytes (2 switches on core 0)
+[pid: 83317|app: 0|req: 19/66] 192.168.1.112 () {38 vars in 645 bytes} [Fri Dec 26 11:47:20 2014] GET /crazyApple/home => generated 0 bytes in 1 msecs (HTTP/1.1 301) 3 headers in 157 bytes (2 switches on core 0)
+used time = 0.00939798355103
+[3, 2, 1, 0]
+[2, 1, 0, 3]
+[3, 0, 1, 2]
+[0, 1, 2, 3]
+32  == progress_new_value
+3
+[pid: 83319|app: 0|req: 33/67] 192.168.1.112 () {38 vars in 647 bytes} [Fri Dec 26 11:47:20 2014] GET /crazyApple/home/ => generated 5927 bytes in 26 msecs (HTTP/1.1 200) 5 headers in 355 bytes (1 switches on core 0)
+[pid: 83319|app: 0|req: 34/68] 192.168.1.112 () {42 vars in 791 bytes} [Fri Dec 26 11:47:24 2014] GET /crazyApple/finish/ => generated 378 bytes in 7 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 83318|app: 0|req: 15/69] 192.168.1.112 () {42 vars in 791 bytes} [Fri Dec 26 11:47:24 2014] GET /crazyApple/finish/ => generated 377 bytes in 8 msecs (HTTP/1.1 200) 3 headers in 102 bytes (2 switches on core 0)
+[pid: 83319|app: 0|req: 35/70] 192.168.1.112 () {42 vars in 791 bytes} [Fri Dec 26 11:47:24 2014] GET /crazyApple/finish/ => generated 378 bytes in 7 msecs (HTTP/1.1 200) 3 headers in 102 bytes (2 switches on core 0)
+[pid: 83317|app: 0|req: 20/71] 192.168.1.112 () {42 vars in 791 bytes} [Fri Dec 26 11:47:24 2014] GET /crazyApple/finish/ => generated 377 bytes in 8 msecs (HTTP/1.1 200) 3 headers in 102 bytes (2 switches on core 0)
+used time = 0.00957798957825
+[1, 3, 2, 0]
+[3, 1, 0, 2]
+[0, 3, 2, 1]
+[2, 0, 1, 3]
+32  == progress_new_value
+4
+[pid: 83319|app: 0|req: 36/72] 192.168.1.112 () {40 vars in 748 bytes} [Fri Dec 26 11:47:26 2014] GET /crazyApple/home/ => generated 5940 bytes in 24 msecs (HTTP/1.1 200) 5 headers in 355 bytes (2 switches on core 0)
+used time = 0.00344109535217
+[0, 2, 1, 3]
+[3, 0, 2, 1]
+[2, 3, 0, 1]
+[1, 0, 2, 3]
+78  == progress_new_value
+4
+[pid: 83318|app: 0|req: 16/73] 192.168.1.112 () {38 vars in 647 bytes} [Fri Dec 26 11:47:27 2014] GET /crazyApple/home/ => generated 5927 bytes in 19 msecs (HTTP/1.1 200) 5 headers in 355 bytes (1 switches on core 0)
+get a post !!!
+chose id == 2
+progress value  42
+used time = 0.00168490409851
+[0, 2, 1, 3]
+[3, 1, 2, 0]
+[3, 2, 0, 1]
+[0, 3, 1, 2]
+44  == progress_new_value
+5
+[pid: 83319|app: 0|req: 37/74] 192.168.1.112 () {48 vars in 1016 bytes} [Fri Dec 26 11:47:33 2014] POST /crazyApple/home/ => generated 5927 bytes in 15 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+get a post !!!
+chose id == 3
+progress value  8
+used time = 0.0118029117584
+[0, 3, 1, 2]
+[3, 2, 0, 1]
+[3, 1, 0, 2]
+[1, 2, 3, 0]
+18  == progress_new_value
+3
+[pid: 83317|app: 0|req: 21/75] 192.168.1.112 () {48 vars in 1014 bytes} [Fri Dec 26 11:47:37 2014] POST /crazyApple/home/ => generated 5927 bytes in 23 msecs (HTTP/1.1 200) 4 headers in 224 bytes (2 switches on core 0)
+get a post !!!
+chose id == 0
+progress value  2
+[pid: 83319|app: 0|req: 38/76] 192.168.1.112 () {42 vars in 791 bytes} [Fri Dec 26 11:47:40 2014] GET /crazyApple/finish/ => generated 378 bytes in 7 msecs (HTTP/1.1 200) 3 headers in 102 bytes (2 switches on core 0)
+used time = 0.00741410255432
+[2, 0, 3, 1]
+[3, 1, 2, 0]
+[1, 2, 3, 0]
+[2, 3, 0, 1]
+4  == progress_new_value
+5
+[pid: 83318|app: 0|req: 17/77] 192.168.1.112 () {48 vars in 1016 bytes} [Fri Dec 26 11:47:40 2014] POST /crazyApple/home/ => generated 5939 bytes in 20 msecs (HTTP/1.1 200) 4 headers in 224 bytes (2 switches on core 0)
+new.....
+used time = 0.015636920929
+[1, 3, 2, 0]
+[3, 2, 0, 1]
+[3, 0, 2, 1]
+[0, 3, 1, 2]
+100  == progress_new_value
+5
+[pid: 83317|app: 0|req: 22/78] 192.168.1.112 () {40 vars in 748 bytes} [Fri Dec 26 11:47:42 2014] GET /crazyApple/home/ => generated 5942 bytes in 33 msecs (HTTP/1.1 200) 5 headers in 355 bytes (2 switches on core 0)
+[pid: 83317|app: 0|req: 23/79] 192.168.1.112 () {42 vars in 791 bytes} [Fri Dec 26 11:47:52 2014] GET /crazyApple/finish/ => generated 378 bytes in 8 msecs (HTTP/1.1 200) 3 headers in 102 bytes (2 switches on core 0)
+new.....
+used time = 0.00239491462708
+[3, 2, 1, 0]
+[0, 3, 2, 1]
+[1, 0, 2, 3]
+[2, 1, 3, 0]
+100  == progress_new_value
+5
+[pid: 83319|app: 0|req: 39/80] 192.168.1.112 () {40 vars in 748 bytes} [Fri Dec 26 11:47:53 2014] GET /crazyApple/home/ => generated 5941 bytes in 19 msecs (HTTP/1.1 200) 5 headers in 355 bytes (2 switches on core 0)
+used time = 0.0137910842896
+[1, 0, 2, 3]
+[3, 2, 0, 1]
+[0, 3, 1, 2]
+[2, 1, 0, 3]
+4  == progress_new_value
+4
+[pid: 83318|app: 0|req: 18/81] 192.168.1.112 () {40 vars in 748 bytes} [Fri Dec 26 11:47:55 2014] GET /crazyApple/home/ => generated 5926 bytes in 28 msecs (HTTP/1.1 200) 5 headers in 355 bytes (1 switches on core 0)
+[pid: 83317|app: 0|req: 24/82] 192.168.1.112 () {42 vars in 791 bytes} [Fri Dec 26 11:47:55 2014] GET /crazyApple/finish/ => generated 378 bytes in 8 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 83319|app: 0|req: 40/83] 192.168.1.112 () {42 vars in 791 bytes} [Fri Dec 26 11:47:56 2014] GET /crazyApple/finish/ => generated 378 bytes in 8 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 83319|app: 0|req: 41/84] 192.168.1.112 () {42 vars in 791 bytes} [Fri Dec 26 11:47:56 2014] GET /crazyApple/finish/ => generated 378 bytes in 7 msecs (HTTP/1.1 200) 3 headers in 102 bytes (2 switches on core 0)
+used time = 0.00114393234253
+[0, 3, 2, 1]
+[1, 2, 0, 3]
+[2, 1, 3, 0]
+[0, 3, 2, 1]
+100  == progress_new_value
+5
+[pid: 83319|app: 0|req: 42/85] 192.168.1.112 () {40 vars in 748 bytes} [Fri Dec 26 11:47:56 2014] GET /crazyApple/home/ => generated 5941 bytes in 19 msecs (HTTP/1.1 200) 5 headers in 355 bytes (1 switches on core 0)
+[pid: 83319|app: 0|req: 43/86] 192.168.1.112 () {42 vars in 791 bytes} [Fri Dec 26 11:47:57 2014] GET /crazyApple/finish/ => generated 378 bytes in 8 msecs (HTTP/1.1 200) 3 headers in 102 bytes (2 switches on core 0)
+[pid: 83319|app: 0|req: 44/87] 192.168.1.109 () {44 vars in 916 bytes} [Fri Dec 26 14:09:15 2014] GET /crazyApple/finish/ => generated 378 bytes in 48 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 83317|app: 0|req: 25/88] 192.168.1.101 () {40 vars in 700 bytes} [Fri Dec 26 14:10:09 2014] GET / => generated 0 bytes in 14 msecs (HTTP/1.1 301) 4 headers in 170 bytes (1 switches on core 0)
+[pid: 83317|app: 0|req: 26/89] 192.168.1.101 () {40 vars in 730 bytes} [Fri Dec 26 14:10:09 2014] GET /crazyApple/home => generated 0 bytes in 1 msecs (HTTP/1.1 301) 3 headers in 157 bytes (2 switches on core 0)
+used time = 0.00515389442444
+[2, 0, 1, 3]
+[3, 1, 0, 2]
+[1, 3, 0, 2]
+[2, 0, 3, 1]
+4  == progress_new_value
+5
+[pid: 83318|app: 0|req: 19/90] 192.168.1.101 () {40 vars in 732 bytes} [Fri Dec 26 14:10:09 2014] GET /crazyApple/home/ => generated 5926 bytes in 47 msecs (HTTP/1.1 200) 5 headers in 355 bytes (1 switches on core 0)
+[pid: 83319|app: 0|req: 45/91] 192.168.1.101 () {42 vars in 752 bytes} [Fri Dec 26 14:10:09 2014] GET /favicon.ico => generated 85 bytes in 13 msecs (HTTP/1.1 404) 3 headers in 94 bytes (1 switches on core 0)
+[pid: 83319|app: 0|req: 46/92] 192.168.1.101 () {44 vars in 895 bytes} [Fri Dec 26 14:10:10 2014] GET /crazyApple/finish/ => generated 378 bytes in 8 msecs (HTTP/1.1 200) 3 headers in 102 bytes (2 switches on core 0)
+[pid: 83318|app: 0|req: 20/93] 192.168.1.101 () {42 vars in 801 bytes} [Fri Dec 26 14:10:24 2014] GET / => generated 0 bytes in 4 msecs (HTTP/1.1 301) 4 headers in 170 bytes (1 switches on core 0)
+[pid: 83317|app: 0|req: 27/94] 192.168.1.101 () {42 vars in 831 bytes} [Fri Dec 26 14:10:24 2014] GET /crazyApple/home => generated 0 bytes in 2 msecs (HTTP/1.1 301) 3 headers in 157 bytes (2 switches on core 0)
+new.....
+used time = 0.0304980278015
+[2, 1, 3, 0]
+[3, 0, 1, 2]
+[3, 2, 1, 0]
+[1, 0, 3, 2]
+100  == progress_new_value
+6
+[pid: 83318|app: 0|req: 21/95] 192.168.1.101 () {42 vars in 833 bytes} [Fri Dec 26 14:10:24 2014] GET /crazyApple/home/ => generated 5928 bytes in 47 msecs (HTTP/1.1 200) 5 headers in 355 bytes (1 switches on core 0)
+get a post !!!
+chose id == 0
+progress value  34
+used time = 0.00282001495361
+[3, 2, 0, 1]
+[0, 1, 3, 2]
+[1, 0, 3, 2]
+[0, 2, 1, 3]
+36  == progress_new_value
+3
+[pid: 83317|app: 0|req: 28/96] 192.168.1.101 () {52 vars in 1145 bytes} [Fri Dec 26 14:10:31 2014] POST /crazyApple/home/ => generated 5940 bytes in 27 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+get a post !!!
+chose id == 2
+progress value  20
+used time = 0.0348439216614
+[3, 2, 1, 0]
+[1, 0, 2, 3]
+[1, 0, 3, 2]
+[2, 3, 1, 0]
+30  == progress_new_value
+4
+[pid: 83318|app: 0|req: 22/97] 192.168.1.101 () {52 vars in 1145 bytes} [Fri Dec 26 14:10:33 2014] POST /crazyApple/home/ => generated 5940 bytes in 47 msecs (HTTP/1.1 200) 4 headers in 224 bytes (2 switches on core 0)
+get a post !!!
+chose id == 2
+progress value  18
+used time = 0.0028030872345
+[2, 1, 0, 3]
+[3, 2, 1, 0]
+[0, 1, 2, 3]
+[2, 3, 1, 0]
+20  == progress_new_value
+3
+[pid: 83318|app: 0|req: 23/98] 192.168.1.101 () {52 vars in 1145 bytes} [Fri Dec 26 14:10:34 2014] POST /crazyApple/home/ => generated 5940 bytes in 14 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+get a post !!!
+chose id == 3
+progress value  4
+used time = 0.0455121994019
+[1, 0, 2, 3]
+[3, 2, 0, 1]
+[1, 2, 3, 0]
+[3, 1, 0, 2]
+6  == progress_new_value
+3
+[pid: 83317|app: 0|req: 29/99] 192.168.1.101 () {52 vars in 1145 bytes} [Fri Dec 26 14:10:36 2014] POST /crazyApple/home/ => generated 5926 bytes in 58 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+[pid: 83317|app: 0|req: 30/100] 192.168.1.101 () {44 vars in 895 bytes} [Fri Dec 26 14:10:37 2014] GET /crazyApple/finish/ => generated 377 bytes in 9 msecs (HTTP/1.1 200) 3 headers in 102 bytes (2 switches on core 0)
+get a post !!!
+chose id == 2
+progress value  0
+used time = 0.00142002105713
+[3, 2, 1, 0]
+[2, 0, 3, 1]
+[0, 2, 1, 3]
+[2, 3, 0, 1]
+2  == progress_new_value
+5
+[pid: 83317|app: 0|req: 31/101] 192.168.1.101 () {52 vars in 1145 bytes} [Fri Dec 26 14:10:37 2014] POST /crazyApple/home/ => generated 5926 bytes in 14 msecs (HTTP/1.1 200) 4 headers in 224 bytes (2 switches on core 0)
+[pid: 83319|app: 0|req: 47/102] 192.168.1.101 () {44 vars in 895 bytes} [Fri Dec 26 14:10:37 2014] GET /crazyApple/finish/ => generated 378 bytes in 8 msecs (HTTP/1.1 200) 3 headers in 102 bytes (2 switches on core 0)
+[pid: 83317|app: 0|req: 32/103] 192.168.1.101 () {44 vars in 895 bytes} [Fri Dec 26 14:10:38 2014] GET /crazyApple/finish/ => generated 377 bytes in 8 msecs (HTTP/1.1 200) 3 headers in 102 bytes (2 switches on core 0)
+[pid: 83318|app: 0|req: 24/104] 192.168.1.101 () {44 vars in 895 bytes} [Fri Dec 26 14:10:38 2014] GET /crazyApple/finish/ => generated 378 bytes in 8 msecs (HTTP/1.1 200) 3 headers in 102 bytes (2 switches on core 0)
+[pid: 83319|app: 0|req: 48/105] 192.168.1.101 () {44 vars in 895 bytes} [Fri Dec 26 14:10:38 2014] GET /crazyApple/finish/ => generated 378 bytes in 8 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 83318|app: 0|req: 25/106] 192.168.1.101 () {42 vars in 801 bytes} [Fri Dec 26 14:10:50 2014] GET / => generated 0 bytes in 3 msecs (HTTP/1.1 301) 4 headers in 170 bytes (2 switches on core 0)
+[pid: 83319|app: 0|req: 49/107] 192.168.1.101 () {42 vars in 831 bytes} [Fri Dec 26 14:10:51 2014] GET /crazyApple/home => generated 0 bytes in 1 msecs (HTTP/1.1 301) 3 headers in 157 bytes (2 switches on core 0)
+new.....
+used time = 0.00132298469543
+[0, 3, 2, 1]
+[1, 0, 3, 2]
+[3, 1, 2, 0]
+[0, 2, 1, 3]
+100  == progress_new_value
+6
+[pid: 83319|app: 0|req: 50/108] 192.168.1.101 () {42 vars in 833 bytes} [Fri Dec 26 14:10:51 2014] GET /crazyApple/home/ => generated 5928 bytes in 18 msecs (HTTP/1.1 200) 5 headers in 355 bytes (2 switches on core 0)
+get a post !!!
+chose id == 0
+progress value  84
+used time = 0.00516796112061
+[1, 0, 3, 2]
+[2, 3, 0, 1]
+[1, 2, 3, 0]
+[2, 1, 0, 3]
+94  == progress_new_value
+3
+[pid: 83317|app: 0|req: 33/109] 192.168.1.101 () {52 vars in 1145 bytes} [Fri Dec 26 14:10:53 2014] POST /crazyApple/home/ => generated 5927 bytes in 17 msecs (HTTP/1.1 200) 4 headers in 224 bytes (2 switches on core 0)
+get a post !!!
+chose id == 2
+progress value  80
+used time = 0.0127000808716
+[1, 2, 3, 0]
+[2, 1, 0, 3]
+[2, 3, 0, 1]
+[1, 2, 3, 0]
+82  == progress_new_value
+5
+[pid: 83319|app: 0|req: 51/110] 192.168.1.101 () {52 vars in 1145 bytes} [Fri Dec 26 14:10:54 2014] POST /crazyApple/home/ => generated 5927 bytes in 24 msecs (HTTP/1.1 200) 4 headers in 224 bytes (2 switches on core 0)
+get a post !!!
+chose id == 1
+progress value  70
+used time = 0.0109751224518
+[3, 2, 0, 1]
+[0, 3, 1, 2]
+[2, 3, 0, 1]
+[3, 2, 1, 0]
+80  == progress_new_value
+5
+[pid: 83317|app: 0|req: 34/111] 192.168.1.101 () {52 vars in 1145 bytes} [Fri Dec 26 14:10:56 2014] POST /crazyApple/home/ => generated 5940 bytes in 22 msecs (HTTP/1.1 200) 4 headers in 224 bytes (2 switches on core 0)
+get a post !!!
+chose id == 1
+progress value  74
+used time = 0.015976190567
+[0, 1, 2, 3]
+[3, 2, 0, 1]
+[0, 2, 1, 3]
+[1, 0, 3, 2]
+84  == progress_new_value
+5
+[pid: 83316|app: 0|req: 2/112] 192.168.1.101 () {52 vars in 1145 bytes} [Fri Dec 26 14:10:57 2014] POST /crazyApple/home/ => generated 5927 bytes in 46 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+get a post !!!
+chose id == 3
+progress value  74
+used time = 0.00611805915833
+[2, 3, 0, 1]
+[0, 1, 2, 3]
+[1, 2, 0, 3]
+[0, 3, 1, 2]
+76  == progress_new_value
+6
+[pid: 83319|app: 0|req: 52/113] 192.168.1.101 () {52 vars in 1145 bytes} [Fri Dec 26 14:10:58 2014] POST /crazyApple/home/ => generated 5927 bytes in 17 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+get a post !!!
+chose id == 3
+progress value  58
+used time = 0.00634694099426
+[3, 0, 2, 1]
+[0, 2, 1, 3]
+[3, 0, 1, 2]
+[2, 1, 3, 0]
+60  == progress_new_value
+4
+[pid: 83317|app: 0|req: 35/114] 192.168.1.101 () {52 vars in 1145 bytes} [Fri Dec 26 14:11:00 2014] POST /crazyApple/home/ => generated 5927 bytes in 18 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+get a post !!!
+chose id == 0
+progress value  48
+used time = 0.00569891929626
+[2, 0, 1, 3]
+[1, 3, 2, 0]
+[3, 2, 0, 1]
+[1, 0, 3, 2]
+58  == progress_new_value
+3
+[pid: 83318|app: 0|req: 26/115] 192.168.1.101 () {52 vars in 1145 bytes} [Fri Dec 26 14:11:02 2014] POST /crazyApple/home/ => generated 5927 bytes in 16 msecs (HTTP/1.1 200) 4 headers in 224 bytes (2 switches on core 0)
+get a post !!!
+chose id == 0
+progress value  40
+used time = 0.00539708137512
+[2, 0, 3, 1]
+[0, 3, 1, 2]
+[1, 3, 0, 2]
+[0, 2, 1, 3]
+42  == progress_new_value
+3
+[pid: 83318|app: 0|req: 27/116] 192.168.1.101 () {52 vars in 1145 bytes} [Fri Dec 26 14:11:04 2014] POST /crazyApple/home/ => generated 5927 bytes in 18 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+[pid: 83319|app: 0|req: 53/117] 192.168.1.101 () {44 vars in 895 bytes} [Fri Dec 26 14:11:08 2014] GET /crazyApple/finish/ => generated 377 bytes in 8 msecs (HTTP/1.1 200) 3 headers in 102 bytes (2 switches on core 0)
+new.....
+used time = 0.0225710868835
+[2, 3, 0, 1]
+[3, 0, 1, 2]
+[0, 1, 2, 3]
+[3, 0, 1, 2]
+100  == progress_new_value
+6
+[pid: 83317|app: 0|req: 36/118] 192.168.1.101 () {42 vars in 833 bytes} [Fri Dec 26 14:11:10 2014] GET /crazyApple/home/ => generated 5940 bytes in 38 msecs (HTTP/1.1 200) 5 headers in 355 bytes (2 switches on core 0)
+[pid: 83319|app: 0|req: 54/119] 192.168.1.101 () {44 vars in 895 bytes} [Fri Dec 26 14:11:21 2014] GET /crazyApple/finish/ => generated 377 bytes in 9 msecs (HTTP/1.1 200) 3 headers in 102 bytes (2 switches on core 0)
+[pid: 83317|app: 0|req: 37/120] 192.168.1.101 () {42 vars in 801 bytes} [Fri Dec 26 14:11:26 2014] GET / => generated 0 bytes in 3 msecs (HTTP/1.1 301) 4 headers in 170 bytes (2 switches on core 0)
+[pid: 83317|app: 0|req: 38/121] 192.168.1.101 () {42 vars in 831 bytes} [Fri Dec 26 14:11:26 2014] GET /crazyApple/home => generated 0 bytes in 1 msecs (HTTP/1.1 301) 3 headers in 157 bytes (2 switches on core 0)
+new.....
+used time = 0.0156960487366
+[3, 0, 2, 1]
+[0, 2, 1, 3]
+[3, 0, 1, 2]
+[2, 1, 0, 3]
+100  == progress_new_value
+5
+[pid: 83317|app: 0|req: 39/122] 192.168.1.101 () {42 vars in 833 bytes} [Fri Dec 26 14:11:26 2014] GET /crazyApple/home/ => generated 5942 bytes in 30 msecs (HTTP/1.1 200) 5 headers in 355 bytes (2 switches on core 0)
+used time = 5.10215759277e-05
+[1, 0, 3, 2]
+[0, 1, 2, 3]
+[2, 0, 1, 3]
+[0, 1, 3, 2]
+76  == progress_new_value
+5
+[pid: 83319|app: 0|req: 55/123] 192.168.1.101 () {42 vars in 833 bytes} [Fri Dec 26 14:11:35 2014] GET /crazyApple/home/ => generated 5940 bytes in 21 msecs (HTTP/1.1 200) 5 headers in 355 bytes (1 switches on core 0)
+[pid: 83317|app: 0|req: 40/124] 192.168.1.101 () {44 vars in 895 bytes} [Fri Dec 26 14:11:43 2014] GET /crazyApple/finish/ => generated 377 bytes in 8 msecs (HTTP/1.1 200) 3 headers in 102 bytes (2 switches on core 0)
+[pid: 83319|app: 0|req: 56/125] 192.168.1.101 () {46 vars in 926 bytes} [Fri Dec 26 14:11:49 2014] GET /crazyApple/finish/ => generated 377 bytes in 9 msecs (HTTP/1.1 200) 3 headers in 102 bytes (2 switches on core 0)
+new.....
+used time = 0.020250082016
+[3, 1, 2, 0]
+[0, 2, 3, 1]
+[0, 3, 2, 1]
+[1, 2, 3, 0]
+100  == progress_new_value
+5
+[pid: 83318|app: 0|req: 28/126] 192.168.1.101 () {42 vars in 833 bytes} [Fri Dec 26 14:11:53 2014] GET /crazyApple/home/ => generated 5928 bytes in 34 msecs (HTTP/1.1 200) 5 headers in 355 bytes (1 switches on core 0)
+get a post !!!
+chose id == 0
+progress value  76
+used time = 0.000891923904419
+[1, 3, 0, 2]
+[2, 0, 3, 1]
+[1, 0, 2, 3]
+[3, 2, 0, 1]
+78  == progress_new_value
+6
+[pid: 83319|app: 0|req: 57/127] 192.168.1.101 () {52 vars in 1145 bytes} [Fri Dec 26 14:11:56 2014] POST /crazyApple/home/ => generated 5927 bytes in 11 msecs (HTTP/1.1 200) 4 headers in 224 bytes (2 switches on core 0)
+get a post !!!
+chose id == 3
+progress value  54
+used time = 0.000499963760376
+[0, 3, 2, 1]
+[2, 0, 1, 3]
+[2, 0, 1, 3]
+[3, 1, 0, 2]
+56  == progress_new_value
+4
+[pid: 83317|app: 0|req: 41/128] 192.168.1.101 () {52 vars in 1145 bytes} [Fri Dec 26 14:12:00 2014] POST /crazyApple/home/ => generated 5927 bytes in 13 msecs (HTTP/1.1 200) 4 headers in 224 bytes (2 switches on core 0)
+get a post !!!
+chose id == 3
+progress value  36
+used time = 0.00381803512573
+[2, 0, 1, 3]
+[3, 1, 2, 0]
+[1, 0, 3, 2]
+[0, 3, 2, 1]
+46  == progress_new_value
+5
+[pid: 83319|app: 0|req: 58/129] 192.168.1.101 () {52 vars in 1145 bytes} [Fri Dec 26 14:12:01 2014] POST /crazyApple/home/ => generated 5927 bytes in 16 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+get a post !!!
+chose id == 1
+progress value  22
+used time = 0.0118899345398
+[2, 0, 3, 1]
+[3, 2, 1, 0]
+[0, 1, 2, 3]
+[3, 0, 1, 2]
+32  == progress_new_value
+4
+[pid: 83319|app: 0|req: 59/130] 192.168.1.101 () {52 vars in 1145 bytes} [Fri Dec 26 14:12:03 2014] POST /crazyApple/home/ => generated 5927 bytes in 23 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+get a post !!!
+chose id == 2
+progress value  20
+used time = 0.00284910202026
+[2, 0, 1, 3]
+[3, 1, 2, 0]
+[2, 3, 1, 0]
+[3, 0, 2, 1]
+22  == progress_new_value
+4
+[pid: 83317|app: 0|req: 42/131] 192.168.1.101 () {52 vars in 1145 bytes} [Fri Dec 26 14:12:05 2014] POST /crazyApple/home/ => generated 5927 bytes in 15 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+get a post !!!
+chose id == 3
+progress value  4
+used time = 0.00188183784485
+[1, 2, 3, 0]
+[0, 3, 2, 1]
+[1, 2, 0, 3]
+[2, 3, 1, 0]
+6  == progress_new_value
+5
+[pid: 83319|app: 0|req: 60/132] 192.168.1.101 () {52 vars in 1145 bytes} [Fri Dec 26 14:12:07 2014] POST /crazyApple/home/ => generated 5939 bytes in 15 msecs (HTTP/1.1 200) 4 headers in 224 bytes (2 switches on core 0)
+[pid: 83319|app: 0|req: 61/133] 192.168.1.101 () {44 vars in 895 bytes} [Fri Dec 26 14:12:08 2014] GET /crazyApple/finish/ => generated 377 bytes in 8 msecs (HTTP/1.1 200) 3 headers in 102 bytes (2 switches on core 0)
+[pid: 83319|app: 0|req: 62/134] 192.168.1.101 () {44 vars in 895 bytes} [Fri Dec 26 14:12:08 2014] GET /crazyApple/finish/ => generated 377 bytes in 12 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 83319|app: 0|req: 63/135] 192.168.1.101 () {44 vars in 895 bytes} [Fri Dec 26 14:12:08 2014] GET /crazyApple/finish/ => generated 377 bytes in 8 msecs (HTTP/1.1 200) 3 headers in 102 bytes (2 switches on core 0)
