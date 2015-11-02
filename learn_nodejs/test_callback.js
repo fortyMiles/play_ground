@@ -16,9 +16,19 @@ function get_input(options, callback){
     callback('test1', 'test2');
 }
 
-get_input({name:'Rich', age:19}, log_stuff);
+var Test = function(){
 
 
-get_input({name:'Rich', age:19}, function(arg1, arg2){
-    console.info(arg1 + ' ' + arg2);
-});
+    var name = 'a';
+    get_input({name:'Rich', age:19}, function(arg1, arg2){
+        console.info(arg1 + ' ' + arg2);
+        console.log('in callback');
+        name = 'not a';
+    });
+
+    console.info('name == ' + name);
+}
+
+var test = new Test();
+
+
