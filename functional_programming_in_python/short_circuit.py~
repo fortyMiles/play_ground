@@ -1,0 +1,2 @@
+x = 3
+def pr(s): return s
