@@ -37,6 +37,16 @@
     )
   )
 
+(define (accumalate-iter func begin end inc-func)
+  (define (iter a result)
+    (if (> a end)
+	result
+	(iter (inc-func a) (+ (func a) result))
+	)
+    )
+  (iter begin 0)
+  )
+
 (define (d k n)
   (if (or (= k 0) (= k n))
       1
@@ -53,3 +63,52 @@
        3)
     )
   )
+
+(define (product func a b next)
+  (if (> a b)
+      1
+      (* (func a) (product func (next a) b next))
+      )
+  )
+
+(define (factorial n)
+  (product (lambda (x) x) 1 n (lambda (x) (+ x 1)))
+  )
+
+(define (pi-term n)
+  (if (even? n)
+      (/ (+ n 2) (+ n 1))
+      (/ (+ n 1) (+ n 2))
+      )
+  )
+
+
+(define (product-iter func a b next)
+  (define (iter i result)
+    (if (> i b)
+	result
+	(iter (next i) (* (func i) result))
+	)
+    )
+
+  (iter a 1)
+  )
+
+
+(define (accumulate combiner null-value term a next b)
+  (if (> a b)
+      null-value
+      (combiner (term a) (accumulate combiner null-value term (next a) next b))
+      )
+  )
+
+(define (acc-iter combiner null-value term a next b)
+  (define (iter i result)
+    (if (> i b)
+	result
+	(iter (next i) (combiner i result))
+	)
+    )
+  (iter 1 null-value)
+  )
+
