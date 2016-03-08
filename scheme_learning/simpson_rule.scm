@@ -102,11 +102,16 @@
       )
   )
 
-(define (acc-iter combiner null-value term a next b)
+(define (acc-iter-filter combiner null-value term a next b filter)
   (define (iter i result)
-    (if (> i b)
-	result
-	(iter (next i) (combiner i result))
+    (cond ((> i b)
+	   result
+	   )
+	  ((filter i)
+	   (newline)
+	   (display i)
+	   (iter (next i) (combiner i result))
+	   )
 	)
     )
   (iter 1 null-value)
