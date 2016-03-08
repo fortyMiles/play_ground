@@ -44,11 +44,11 @@
       )
   )
 
-(define (inc x) (+ x 1))
 
 (define (simp-inte func a b n)
   (let ([h (/ (- b a) n)])
     (define (y i) (func (+ a (* i h))))
+    (define (inc x) (+ x 1))
     (/ (* h (accumalate (lambda (i) (* (d i n) (y i))) 0 n inc))
        3)
     )
