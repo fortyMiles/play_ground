@@ -23,3 +23,20 @@
 	)
     )
   )
+
+
+(define (smooth f)
+  (define dt 0.001)
+  (define (average x y) (/ (+ x y) 2.0))
+  (lambda (x) (average (f x) (f (+ x dt))))
+  )
+
+(define (smooth-n f n)
+  (lambda (x)
+    (if (= n 1)
+	((smooth f) x)
+	((smooth (smooth-n f (- n 1))) x)
+	)
+    )
+  )
+  
