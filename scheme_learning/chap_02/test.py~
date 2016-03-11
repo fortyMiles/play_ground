@@ -1,0 +1,8 @@
+def cons(x, y):
+    def dispatch(m):
+        if m == 0:
+            return x
+        elif m == 1:
+            return y
+        else:
+            raise ReferenceError('Argument not 0 or 1')

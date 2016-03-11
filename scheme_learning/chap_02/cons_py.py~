@@ -1,0 +1,2 @@
+def cons(x y):
+    return lambda m: m(x, y)
