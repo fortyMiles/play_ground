@@ -31,6 +31,22 @@
         )
   )
 
+(define (fringe L)
+  (cond ((null? L)
+         '()
+         )
+        (
+         (not (pair? L))
+         (list L)
+         )
+        (   
+         (append (fringe (car L))
+                 (fringe (cdr L))
+                 )
+         )
+      )
+  )
+
 (define (odd num)
   (= (remainder num 2) 1)
   )
