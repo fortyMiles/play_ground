@@ -19,6 +19,18 @@
       )
   )
 
+(define (deep-reverse L)
+  (cond ((null? L)
+         '())
+        ((not (pair? L))
+         L
+         )
+        (
+         (append (deep-reverse (cdr L)) (list (deep-reverse (car L))))
+         )
+        )
+  )
+
 (define (odd num)
   (= (remainder num 2) 1)
   )
