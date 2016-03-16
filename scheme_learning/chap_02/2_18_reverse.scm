@@ -1,0 +1,20 @@
+(define (append list1 list2)
+  (if (null? list1)
+      list2
+      (cons (car list1) (append (cdr list1) list2))
+      )
+  )
+
+(define (append-e L e)
+  (if (null? L)
+      (list e)
+      (cons (car L) (append-e (cdr L) e))
+      )
+  )
+
+(define (reverse L)
+  (if (null? L)
+      '()
+      (append (reverse (cdr L)) (list (car L)))
+      )
+  )
