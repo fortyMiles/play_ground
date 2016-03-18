@@ -87,6 +87,27 @@
   (accumulate (lambda (x y) (+ 1 y)) 0 sequence)
   )
 
+; Exerise 2.34 Evaluating a polynomial
+(define (horner-eval x cofficient-sequence)
+  (accumulate (lambda (this-coffee higher-items)
+		(+ this-coffee (* x higher-items))
+		)
+	      0
+	      cofficient-sequence
+	      ))
+
+
+;Exerise 2.35 Redifine count-leaves as an accumulation
+(define (count-leaves t)
+  (accumulate + 0 (map (lambda (subtree)
+			 (if (pair? subtree)
+			     (count-leaves subtree)
+			     1
+			     ))
+			  t)))
+
+
+
 (define (enumerate-interval low high)
   (if (> low high)
       '()
