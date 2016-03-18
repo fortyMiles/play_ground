@@ -74,6 +74,27 @@
       )
   )
 
+(define (fold-left op initial sequence)
+  (define (iter result rest)
+    (if (null? rest)
+	result
+	(iter (op result (car rest))
+	      (cdr rest)
+	      )
+	)
+    )
+  (iter initial sequence)
+  )
+
+;; 3.39
+(define (reverse sequence)
+  (accumulate (lambda (x y) (append y (list x))) '() sequence)
+  )
+
+(define (reverse-2 sequence)
+  (fold-left (lambda (x y) (append (list y) x)) '() sequence)
+  )
+
 (define (self-map p sequence)
   (define nil '())
   (accumulate (lambda (x y) (cons (p x) y)) nil sequence)
@@ -104,9 +125,42 @@
 			     (count-leaves subtree)
 			     1
 			     ))
-			  t)))
+		       t)))
 
 
+
+;; Exerise 2.36 Accumulate n
+(define (accumulate-n op init seqs)
+  (if (null? (car seqs))
+      '()
+      (cons (accumulate op init (map (lambda (e) (car e)) seqs))
+	    (accumulate-n op init (map (lambda (e) (cdr e)) seqs))
+	    )
+      )
+  )
+
+;; 2.37 Martix Operations
+
+(define (dot-product v w)
+  (accumulate + 0 (map * v w))
+  )
+
+(define (martix-*-vector m v)
+  (map (lambda (m-i) (dot-product v)) m)
+  )
+
+;; Exerise 2.38
+(define (fold-left op initial sequence)
+  (define (iter result rest)
+    (if (null? rest)
+	result
+	(iter (op result (car rest))
+	      (cdr rest)
+	)
+    )
+    )
+  (iter initial sequence)
+  )
 
 (define (enumerate-interval low high)
   (if (> low high)
