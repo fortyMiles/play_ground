@@ -1,3 +1,4 @@
+(define nil '())
 (define (scale-tree tree factor)
   (cond ((null? tree) '())
 	((not (pair? tree)) (* tree factor))
@@ -202,4 +203,13 @@
 
 (define (map p sequence)
   (accumulate (lambda (x y) (p x)) nil sequence)
+  )
+
+(define (build-pair n)
+  (accumulate append '() (map (lambda (i)
+				(map (lambda (j) (list i  j))
+				     (enumerate-interval 1 (- i 1)))) (enumerate-interval 1 n))))
+
+(define (flatmap proc seq)
+  (accumulate append nil (map proc seq))
   )
