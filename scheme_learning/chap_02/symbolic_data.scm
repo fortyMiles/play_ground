@@ -93,7 +93,7 @@
 	 (if (same-variable? exp var) 1 0)); dx/dx = 1
 	((exponentiation? exp)
 	 (make-exponentiation (make-product (exponent exp)
-				 (make-exponentiation (base exp) (- (exponent exp) 1)))
+				 (make-exponentiation (base exp) (- (exponent exp))))
 			      (deriv (base exp) var)
 			      )
 	 )
