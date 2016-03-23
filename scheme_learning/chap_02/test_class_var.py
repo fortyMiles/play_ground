@@ -15,4 +15,8 @@ class Test(object):
 
     @classmethod
     def create_test(cls, name):
+        '''
+        Whatever we call the method from the instance or the class. 
+        It passes the class as first argument.
+        '''
         return cls(name)
